@@ -1,11 +1,50 @@
 .sandbox {
   background-color: lightblue;
   padding: 20px;
+
+  display: grid;
+  grid-template-areas: /*  template area names correspond to the name below; order matters - you can move these elements up and down the page by changing the order */
+    " header "
+    " main "
+    " footer "
+    " carl "
+    " pbd "
+  ;
+
+  /* 
+  grid-template:
+  " header header " 300px
+  " carl main "
+  " carl footer "
+  " pbd pbd carl "
+  / 1fr 3fr
+  ;
+  */
 }
 
 .sandbox > * {
   background-color: white;
   padding: 20px;
+}
+
+header {
+  grid-area: header 
+}
+
+main {
+  grid-area: main
+}
+
+footer {
+  grid-area: footer
+}
+
+.carl {
+  grid-area: carl
+}
+
+.pbd {
+  grid-area: pbd
 }
 
 img {
