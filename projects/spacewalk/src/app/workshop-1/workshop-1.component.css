@@ -19,6 +19,8 @@
   " pbd pbd carl "
   / 1fr 3fr
   ;
+
+  fr units should be used in place of percentages - takes into account the fixed gaps
   */
 }
 
